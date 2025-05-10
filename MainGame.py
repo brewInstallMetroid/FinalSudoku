@@ -1,6 +1,10 @@
 from LogicGame import *
 
-def main():
+def main() -> None:
+    '''
+    This function starts the Gui
+    :return: None
+    '''
     application = QApplication([])
     window = Logic()
     window.show()
