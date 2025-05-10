@@ -45,7 +45,7 @@ class Logic (QMainWindow, Ui_MainWindow):
             self.spinBox_36.value(), self.spinBox_37.value(), self.spinBox_38.value(),
             self.spinBox_39.value(), self.spinBox_40.value(), self.spinBox_41.value(),
             self.spinBox_42.value(), self.spinBox_43.value(), self.spinBox_44.value(),
-            self.spinBox_45.value()
+            self.spinBox_45.value(), self.spinBox_46.value()
         ]
 
         answers_correct = 0
@@ -59,6 +59,7 @@ class Logic (QMainWindow, Ui_MainWindow):
 
         if answers_correct == 46:
             self.label_win.setText("You Win! Congrats!")
+            self.timer.stop()
         else:
             self.label_win.setText(f"You Lose! Correct answers: {answers_correct}")
 
